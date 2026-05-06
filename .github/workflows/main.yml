@@ -1,0 +1,29 @@
+name: Build Android APK
+on: [push, pull_request]
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Code
+        uses: actions/checkout@v4
+
+      - name: Set up JDK 17
+        uses: actions/setup-java@v4
+        with:
+          java-version: '17'
+          distribution: 'temurin'
+
+      - name: Build with Gradle
+        run: |
+          # Cấp quyền và chạy build, bỏ qua các lỗi kiểm tra lặt vặt
+          chmod +x gradlew || true
+          gradle assembleDebug --stacktrace -x lint
+
+      - name: Upload APK
+        uses: actions/upload-artifact@v4
+        with:
+          name: AECR BUBBLE
+          # Quét sâu để tìm mọi file .apk được tạo ra
+          path: "**/*.apk"
+          if-no-files-found: error
+          
