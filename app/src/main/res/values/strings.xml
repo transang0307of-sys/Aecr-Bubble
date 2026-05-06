@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Aecr Bubble</string>
+    <string name="btn_play">Chơi ngay</string>
+    <string name="btn_continue">Tiếp tục</string>
+    <string name="btn_restart">Chơi lại</string>
+    <string name="btn_quit">Thoát</string>
+    <string name="score">Điểm: %d</string>
+    <string name="level">Màn: %d</string>
+    <string name="game_over">Thua rồi!</string>
+    <string name="level_clear">Qua màn!</string>
+    <string name="bubbles_left">Còn %d bong bóng</string>
+    <string name="high_score">Điểm cao: %d</string>
+    <string name="paused">Tạm dừng</string>
+    <string name="resume">Tiếp tục</string>
+</resources>

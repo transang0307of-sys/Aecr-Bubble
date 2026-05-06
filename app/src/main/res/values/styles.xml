@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="Theme.AecrBubble" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <item name="colorPrimary">#1565C0</item>
+        <item name="colorPrimaryVariant">#003c8f</item>
+        <item name="colorOnPrimary">#FFFFFF</item>
+        <item name="colorSecondary">#E91E63</item>
+        <item name="android:windowBackground">#0D0D2B</item>
+        <item name="android:statusBarColor">#0D0D2B</item>
+        <item name="android:navigationBarColor">#0D0D2B</item>
+    </style>
+</resources>
